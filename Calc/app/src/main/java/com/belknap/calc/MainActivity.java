@@ -39,7 +39,11 @@ public class MainActivity extends ActionBarActivity
 		if (calcUtil.pendingOps == null)
 			calcUtil.pendingOps = new ArrayList<Command>();
 		calcUtil.currentText = intent.getStringExtra("currentText");
+		if (calcUtil.currentText == null)
+			calcUtil.currentText = "";
 		calcUtil.incomingText = intent.getStringExtra("incomingText");
+		if (calcUtil.incomingText == null)
+			calcUtil.incomingText = "";
 		calcUtil.hasDec = intent.getBooleanExtra("hasDec", false);
 		calcUtil.cntDec = intent.getIntExtra("cntDec", 0);
 		calcUtil.currOperandI = intent.getLongExtra("currOperandI", 0);

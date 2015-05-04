@@ -27,14 +27,16 @@ public class CalcUtil
 				if (pendingOps.get(cntOps).checkDec())
 				{
 					double tmp = pendingOps.get(cntOps).operation().doubleValue();
-					currentText += String.valueOf(tmp);
+					if (cntOps == pendingOps.size() - 1)
+						currentText += String.valueOf(tmp);
 					if (cntOps < pendingOps.size() - 1)
 						pendingOps.get(cntOps + 1).updateOperands(0, tmp, true);
 				}
 				else
 				{
 					long tmp = pendingOps.get(cntOps).operation().longValue();
-					currentText += String.valueOf(tmp);
+					if (cntOps == pendingOps.size() - 1)
+						currentText += String.valueOf(tmp);
 					if (cntOps < pendingOps.size() - 1)
 						pendingOps.get(cntOps + 1).updateOperands(0, tmp, false);
 				}
