@@ -15,6 +15,7 @@ public class CalcUtil
 	public boolean hasDec = false;
 	public int cntDec = 0;
 	public long currOperandI = 0, currOperandD = 0;
+
 	public void processOps()
 	{
 		ArrayList<Number> operands = newOperands();
@@ -31,8 +32,7 @@ public class CalcUtil
 						currentText += String.valueOf(tmp);
 					if (cntOps < pendingOps.size() - 1)
 						pendingOps.get(cntOps + 1).updateOperands(0, tmp, true);
-				}
-				else
+				} else
 				{
 					long tmp = pendingOps.get(cntOps).operation().longValue();
 					if (cntOps == pendingOps.size() - 1)
@@ -107,11 +107,9 @@ public class CalcUtil
 					cntDec--;
 					currOperandD -= currOperandD % 10;
 					currOperandD /= 10;
-				}
-				else
+				} else
 					hasDec = false;
-			}
-			else
+			} else
 			{
 				currOperandI -= currOperandI % 10;
 				currOperandI /= 10;

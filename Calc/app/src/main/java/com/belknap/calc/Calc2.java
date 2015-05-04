@@ -33,10 +33,6 @@ public class Calc2 extends ActionBarActivity
 		calcUtil.calcText = (TextView) findViewById(R.id.calcText);
 
 		Intent intent = getIntent();
-		String tmp = intent.getStringExtra("calcText");
-		if (tmp == null)
-			tmp = "";
-		calcUtil.calcText.setText(tmp);
 		calcUtil.pendingOps = intent.getParcelableArrayListExtra("pendingOps");
 		if (calcUtil.pendingOps == null)
 			calcUtil.pendingOps = new ArrayList<Command>();
@@ -46,6 +42,7 @@ public class Calc2 extends ActionBarActivity
 		calcUtil.incomingText = intent.getStringExtra("incomingText");
 		if (calcUtil.incomingText == null)
 			calcUtil.incomingText = "";
+		calcUtil.calcText.setText(calcUtil.currentText + calcUtil.incomingText);
 		calcUtil.hasDec = intent.getBooleanExtra("hasDec", false);
 		calcUtil.cntDec = intent.getIntExtra("cntDec", 0);
 		calcUtil.currOperandI = intent.getLongExtra("currOperandI", 0);
@@ -80,14 +77,14 @@ public class Calc2 extends ActionBarActivity
 		{
 			public void onClick(View view)
 			{
-                /* TODO: Cos() */
+				/* TODO: Cos() */
 			}
 		});
 		buttonCalc2.setOnClickListener(new View.OnClickListener()
 		{
 			public void onClick(View view)
 			{
-                /* TODO: Tan() */
+				/* TODO: Tan() */
 			}
 		});
 		buttonCalc3.setOnClickListener(new View.OnClickListener()
@@ -187,7 +184,6 @@ public class Calc2 extends ActionBarActivity
 			public void onClick(View view)
 			{
 				Intent intent = new Intent(Calc2.this, MainActivity.class);
-				intent.putExtra("calcText", calcUtil.calcText.getText());
 				intent.putExtra("pendingOps", calcUtil.pendingOps);
 				intent.putExtra("currentText", calcUtil.currentText);
 				intent.putExtra("incomingText", calcUtil.incomingText);
