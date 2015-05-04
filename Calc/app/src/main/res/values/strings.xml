@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="buttonSwitchA">" Advanced "</string>
+    <string name="buttonSwitchB">Basic</string>
+    <string name="buttonDel">Del</string>
+    <string name="buttonKey0c1">7</string>
+    <string name="buttonKey1c1">8</string>
+    <string name="buttonKey2c1">9</string>
+    <string name="buttonKey3c1">/</string>
+    <string name="buttonKey4c1">4</string>
+    <string name="buttonKey5c1">5</string>
+    <string name="buttonKey6c1">6</string>
+    <string name="buttonKey7c1">*</string>
+    <string name="buttonKey8c1">1</string>
+    <string name="buttonKey9c1">2</string>
+    <string name="buttonKeyAc1">3</string>
+    <string name="buttonKeyBc1">-</string>
+    <string name="buttonKeyCc1">.</string>
+    <string name="buttonKeyDc1">0</string>
+    <string name="buttonKeyEc1">=</string>
+    <string name="buttonKeyFc1">+</string>
+    <string name="buttonKey0c2">sin</string>
+    <string name="buttonKey1c2">cos</string>
+    <string name="buttonKey2c2">tan</string>
+    <string name="buttonKey3c2"></string>
+    <string name="buttonKey4c2">ln</string>
+    <string name="buttonKey5c2">log</string>
+    <string name="buttonKey6c2">pi</string>
+    <string name="buttonKey7c2"></string>
+    <string name="buttonKey8c2">%</string>
+    <string name="buttonKey9c2">!</string>
+    <string name="buttonKeyAc2">sqr rt</string>
+    <string name="buttonKeyBc2">^</string>
+    <string name="buttonKeyCc2">(</string>
+    <string name="buttonKeyDc2">)</string>
+    <string name="buttonKeyEc2"></string>
+    <string name="buttonKeyFc2"></string>
+    <string name="action_settings">Settings</string>
+</resources>

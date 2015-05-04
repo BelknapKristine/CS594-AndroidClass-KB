@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:weightSum="1.0">
+    <RelativeLayout style="@style/headingMainLayout">
+        <FrameLayout style="@style/headingButtonLayout">
+            <Button style="@style/buttonMenu"
+                android:text="@string/buttonSwitchB"
+                android:id="@+id/buttonSwitch" />
+        </FrameLayout>
+        <FrameLayout style="@style/headingTextLayout">
+            <TextView style="@style/textCalc"
+                android:id="@+id/calcText" />
+        </FrameLayout>
+        <FrameLayout style="@style/headingButtonLayout"
+            android:layout_alignParentBottom="true" >
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonDel"
+                android:id="@+id/buttonDel" />
+        </FrameLayout>
+    </RelativeLayout>
+    <TableLayout style="@style/calcPadLayout">
+        <TableRow style="@style/calcPadRow">
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey0c2"
+                android:id="@+id/button0"
+                android:layout_column="0" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey1c2"
+                android:id="@+id/button1"
+                android:layout_column="1" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey2c2"
+                android:id="@+id/button2"
+                android:layout_column="2" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey3c2"
+                android:id="@+id/button3"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow style="@style/calcPadRow">
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey4c2"
+                android:id="@+id/button4"
+                android:layout_column="0" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey5c2"
+                android:id="@+id/button5"
+                android:layout_column="1" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey6c2"
+                android:id="@+id/button6"
+                android:layout_column="2" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey7c2"
+                android:id="@+id/button7"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow style="@style/calcPadRow">
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey8c2"
+                android:id="@+id/button8"
+                android:layout_column="0" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKey9c2"
+                android:id="@+id/button9"
+                android:layout_column="1" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKeyAc2"
+                android:id="@+id/buttonA"
+                android:layout_column="2" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKeyBc2"
+                android:id="@+id/buttonB"
+                android:layout_column="3" />
+        </TableRow>
+        <TableRow style="@style/calcPadRow">
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKeyCc2"
+                android:id="@+id/buttonC"
+                android:layout_column="0" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKeyDc2"
+                android:id="@+id/buttonD"
+                android:layout_column="1" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKeyEc2"
+                android:id="@+id/buttonE"
+                android:layout_column="2" />
+            <Button style="@style/buttonCalc"
+                android:text="@string/buttonKeyFc2"
+                android:id="@+id/buttonF"
+                android:layout_column="3" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

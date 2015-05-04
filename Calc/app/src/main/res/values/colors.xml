@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#000055</color>
+    <color name="backgroundText">#AAFFFF</color>
+    <color name="buttonText">#000000</color>
+    <color name="calcText">#000055</color>
+    <color name="buttonBgNormalMenu">#55AAFF</color>
+    <color name="buttonBgPressedMenu">#FFAA55</color>
+    <color name="buttonBgNormal">#0055FF</color>
+    <color name="buttonBgPressed">#FF9900</color>
+</resources>
